@@ -15,7 +15,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  List<String> _products = ['Food Tester'];
+  List<String> _products = ['Mission Impossible 6'];
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,14 @@ class _MyAppState extends State<MyApp> {
             Container(
               margin: EdgeInsets.all(10.0),
               child: RaisedButton(
-                onPressed: () {},
+                onPressed: () {
+
+                  setState(() {
+                      _products.add('Avatar');
+                  
+    
+                  });
+                                },
                 child: Text("Add Product"),
               ),
             ),
