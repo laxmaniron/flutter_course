@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-main() {
+void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  build(context) {
+  @override
+  Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('EasyList'),
+          title: Text('Easy List'),
         ),
       ),
     );
