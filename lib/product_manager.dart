@@ -6,7 +6,7 @@ class ProductManager extends StatefulWidget {
 
   final String startingProduct;
 
-  ProductManager(this.startingProduct);
+  ProductManager({this.startingProduct= "AVATAR"});
 
   @override
   State<StatefulWidget> createState() {

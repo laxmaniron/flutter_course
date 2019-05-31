@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Easy List'),
         ),
-        body:ProductManager('Mission Impossible 6')
+        body:ProductManager(startingProduct:'Mission Impossible 6')
       ),
     );
   }
