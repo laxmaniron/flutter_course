@@ -50,7 +50,7 @@ class _MyAppState extends State<MyApp> {
       // home: AuthPage(),
 
       routes:{
-        '/':(BuildContext context) => ProductsPage(),
+        '/':(BuildContext context) => ProductsPage(_products,_addProduct,_deleteProduct),
         '/admin': (BuildContext context) => ProductsAdminPage(),  
       } ,
 
@@ -65,7 +65,7 @@ class _MyAppState extends State<MyApp> {
         if (pathElements[1] == 'product'){
 
           final int index = int.parse(pathElements[2]);
-          return MaterialPageRoute(
+          return MaterialPageRoute<bool>(
                         builder: (BuildContext context) => ProductPage(
                             _products[index]['title'], _products[index]['image']),
                       );
